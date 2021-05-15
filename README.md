@@ -24,12 +24,9 @@ Small application to show you how to set up [FusionAPI](https://fusionapi.dev)
 
 <h1 align="center">Pictures</h1>
 
-<p float="left">
+<p align="center">
   <img src="https://i.postimg.cc/nLyQwJD9/login.png" alt="Login form"/>
   <img src="https://i.postimg.cc/kG9Rqvwn/register.png" alt="Register form"/> 
-</p>
-
-<p align="center">
   <img src="https://i.postimg.cc/508QhRB7/info.png" alt="App information form">
   <img src="https://i.postimg.cc/mkwzD167/geo.png" alt="GEO form">
   <img src="https://i.postimg.cc/3J80q9d1/bonus.png" alt="Extra form">
