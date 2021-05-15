@@ -1,0 +1,25 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
+        x:Class="FusionAPI_WPF_CSharp.MainWindow"
+        mc:Ignorable="d"
+        Title="FusionAPI WPF CSharp Examples" Height="450" Width="800" Background="#FF131519" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Grid>
+        <materialDesign:Card Background="#FF1B1F25" Margin="20,16,20,18">
+            <Grid HorizontalAlignment="Left" Height="416" VerticalAlignment="Top" Width="760">
+                <materialDesign:Card HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="740" Height="58" Background="#FF131519">
+                    <Grid HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="740">
+                        <Button x:Name="btnInfo" Content="App / User Info" HorizontalAlignment="Left" Margin="5,5,0,0" VerticalAlignment="Top" Width="240" Height="48" Background="#FF1B1F25" BorderBrush="#FF1B1F25" Foreground="#FF8790A4" Click="btnInfo_Click"/>
+                        <Button x:Name="btnAPIs" Content="API Examples" HorizontalAlignment="Left" Margin="250,5,0,0" VerticalAlignment="Top" Width="240" Height="48" Background="#FF1B1F25" BorderBrush="#FF1B1F25" Foreground="#FF8790A4" Click="btnAPIs_Click"/>
+                        <Button x:Name="btnBonus" Content="Bouns Shit" HorizontalAlignment="Left" Margin="495,5,0,0" VerticalAlignment="Top" Width="240" Height="48" Background="#FF1B1F25" BorderBrush="#FF1B1F25" Foreground="#FF8790A4" Click="btnBonus_Click"/>
+                    </Grid>
+                </materialDesign:Card>
+                <Grid x:Name="tabDisplay" HorizontalAlignment="Left" Height="333" Margin="10,73,0,0" VerticalAlignment="Top" Width="740"/>
+            </Grid>
+        </materialDesign:Card>
+        <Grid HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="800" Background="#FF3D62E0" MouseLeftButtonDown="Grid_MouseLeftButtonDown_1"/>
+    </Grid>
+</Window>
