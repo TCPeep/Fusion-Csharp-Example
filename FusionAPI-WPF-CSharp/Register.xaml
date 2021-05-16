@@ -1,0 +1,62 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FusionAPI_WPF_CSharp"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
+        x:Class="FusionAPI_WPF_CSharp.Register"
+        mc:Ignorable="d"
+        Title="FusionAPI WPF Example" Height="562.441" Width="467.98" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None" Background="#FF131519">
+    <Grid MouseLeftButtonDown="Grid_MouseLeftButtonDown">
+        <materialDesign:Card Background="#FF1B1F25" Margin="30">
+            <Grid HorizontalAlignment="Left" Height="502" VerticalAlignment="Top" Width="408">
+                <Label Margin="20,20,260,385">
+                    <TextBlock Text="FusionAPI" FontWeight="Bold" FontSize="24">
+                        <TextBlock.TextEffects>
+                            <TextEffect PositionStart="6" PositionCount="3" Foreground="#3d62e0"/>
+                        </TextBlock.TextEffects>
+                    </TextBlock>
+                </Label>
+                <Label Content="Registration" HorizontalAlignment="Left" Margin="20,75,0,0" VerticalAlignment="Top" Width="128" FontSize="18" Foreground="#FFA1A8AA"/>
+                <TextBlock HorizontalAlignment="Left" Margin="24,107,0,0" TextWrapping="Wrap" Text="Enter your username, password and token to register!" VerticalAlignment="Top" Width="374" Foreground="#FF2F3F46" FontSize="16" Height="45"/>
+                <Label Content="Username" HorizontalAlignment="Left" Margin="20,170,0,0" VerticalAlignment="Top" Width="82" FontSize="16" Foreground="#FFA1A8B8"/>
+                <Grid HorizontalAlignment="Left" Height="43" Margin="24,204,0,0" VerticalAlignment="Top" Width="366">
+                    <Border BorderBrush="#FF353840" CornerRadius="4" BorderThickness="1" HorizontalAlignment="Left" Height="43" VerticalAlignment="Top" Width="366" Background="#FF22262E">
+                        <Grid Margin="0,0,9,0">
+                            <Border CornerRadius="4" BorderThickness="1" HorizontalAlignment="Left" Height="43" VerticalAlignment="Top" Width="47" BorderBrush="#FF353840" Margin="-1,-1,0,-1" Background="#FF1B1F25">
+                                <materialDesign:PackIcon Kind="Account" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="4,4,0,0" Height="32" Width="35" Foreground="#FF8790A4"/>
+                            </Border>
+                            <TextBox x:Name="tbUsername" HorizontalAlignment="Left" VerticalContentAlignment="Center" Height="41" Margin="51,0,-9,0" TextWrapping="Wrap" Text="Peep" VerticalAlignment="Top" Width="313" CaretBrush="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF8790A4" FontSize="16"/>
+                        </Grid>
+                    </Border>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Height="43" Margin="24,294,0,0" VerticalAlignment="Top" Width="366">
+                    <Border BorderBrush="#FF353840" CornerRadius="4" BorderThickness="1" HorizontalAlignment="Left" Height="43" VerticalAlignment="Top" Width="366" Background="#FF22262E">
+                        <Grid Margin="0,0,9,0">
+                            <Border CornerRadius="4" BorderThickness="1" HorizontalAlignment="Left" Height="43" VerticalAlignment="Top" Width="47" BorderBrush="#FF353840" Margin="-1,-1,0,-1" Background="#FF1B1F25">
+                                <materialDesign:PackIcon Kind="LockOutline" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="4,5,0,0" Height="32" Width="35" Foreground="#FF8790A4"/>
+                            </Border>
+                            <PasswordBox x:Name="tbPassword" HorizontalAlignment="Left" VerticalContentAlignment="Center" Height="41" Margin="51,0,-9,0" VerticalAlignment="Top" Width="313" CaretBrush="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF8790A4" FontSize="16" Password="Fatwhore7382412$"/>
+                        </Grid>
+                    </Border>
+                </Grid>
+                <Label Content="Password" HorizontalAlignment="Left" Margin="20,260,0,0" VerticalAlignment="Top" Width="82" FontSize="16" Foreground="#FFA1A8B8"/>
+                <Button x:Name="btnRegister" Content="Register" HorizontalAlignment="Left" Margin="24,451,0,0" VerticalAlignment="Top" Width="366" Background="#FF3D62E0" BorderBrush="#FF3D62E0" Foreground="White" Click="btnRegister_Click"/>
+                <Grid HorizontalAlignment="Left" Height="43" Margin="24,385,0,0" VerticalAlignment="Top" Width="366">
+                    <Border BorderBrush="#FF353840" CornerRadius="4" BorderThickness="1" HorizontalAlignment="Left" Height="43" VerticalAlignment="Top" Width="366" Background="#FF22262E">
+                        <Grid Margin="0,0,9,0">
+                            <Border CornerRadius="4" BorderThickness="1" HorizontalAlignment="Left" Height="43" VerticalAlignment="Top" Width="47" BorderBrush="#FF353840" Margin="-1,-1,0,-1" Background="#FF1B1F25">
+                                <materialDesign:PackIcon Kind="KeyOutline" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="4,5,0,0" Height="32" Width="35" Foreground="#FF8790A4"/>
+                            </Border>
+                            <PasswordBox x:Name="tbToken" HorizontalAlignment="Left" VerticalContentAlignment="Center" Height="41" Margin="51,0,-9,0" VerticalAlignment="Top" Width="313" CaretBrush="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF8790A4" FontSize="16" Password="Fatwhore7382412$"/>
+                        </Grid>
+                    </Border>
+                </Grid>
+                <Label Content="Token" HorizontalAlignment="Left" Margin="20,351,0,0" VerticalAlignment="Top" Width="82" FontSize="16" Foreground="#FFA1A8B8"/>
+            </Grid>
+        </materialDesign:Card>
+        <Label Content="Have an account?" HorizontalAlignment="Left" Margin="162,534,0,0" VerticalAlignment="Top" Width="134" Foreground="#FF2F3F46"/>
+        <Button x:Name="btnLogin" materialDesign:RippleAssist.IsDisabled="True" Content="Login" HorizontalAlignment="Left" Margin="236,531,0,-1" VerticalAlignment="Top" Width="84" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF3D62E0" FontSize="11" Click="btnLogin_Click"/>
+    </Grid>
+</Window>
