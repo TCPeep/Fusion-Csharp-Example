@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="FusionAPI_WPF_CSharp.User_Controls.Information"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FusionAPI_WPF_CSharp.User_Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="333" d:DesignWidth="740">
+    <Grid>
+        <ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalAlignment="Left" Height="333" VerticalAlignment="Top" Width="740">
+            <Grid HorizontalAlignment="Left" Height="449" VerticalAlignment="Top" Width="740">
+                <Label Content="USER" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="66" FontSize="22" FontWeight="Bold"/>
+                <Label Content="Username" HorizontalAlignment="Left" Margin="10,47,0,0" VerticalAlignment="Top" Width="103" FontSize="18" FontWeight="Bold" Foreground="#FF3D62E0"/>
+                <Label Content="Expiry" HorizontalAlignment="Left" Margin="10,79,0,0" VerticalAlignment="Top" Width="103" FontSize="18" FontWeight="Bold" Foreground="#FF3D62E0"/>
+                <Label Content="User ID" HorizontalAlignment="Left" Margin="10,111,0,0" VerticalAlignment="Top" Width="103" FontSize="18" FontWeight="Bold" Foreground="#FF3D62E0"/>
+                <Label Content="Level" HorizontalAlignment="Left" Margin="10,143,0,0" VerticalAlignment="Top" Width="103" FontSize="18" FontWeight="Bold" Foreground="#FF3D62E0"/>
+                <Label Content="IP" HorizontalAlignment="Left" Margin="10,175,0,0" VerticalAlignment="Top" Width="103" FontSize="18" FontWeight="Bold" Foreground="#FF3D62E0"/>
+                <Label Content="Hardware ID" HorizontalAlignment="Left" Margin="10,207,0,0" VerticalAlignment="Top" Width="122" FontSize="18" FontWeight="Bold" Foreground="#FF3D62E0"/>
+                <Label x:Name="lblUsername" Content="N/a" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="252,47,0,0" VerticalAlignment="Top" Width="478" FontSize="18" FontWeight="Bold" Foreground="White"/>
+                <Label x:Name="lblExpiry" Content="N/a" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="252,79,0,0" VerticalAlignment="Top" Width="478" FontSize="18" FontWeight="Bold" Foreground="White"/>
+                <Label x:Name="lblUserID" Content="N/a" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="252,111,0,0" VerticalAlignment="Top" Width="478" FontSize="18" FontWeight="Bold" Foreground="White"/>
+                <Label x:Name="lblLevel" Content="N/a" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="252,143,0,0" VerticalAlignment="Top" Width="478" FontSize="18" FontWeight="Bold" Foreground="White"/>
+                <Label x:Name="lblIP" Content="N/a" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="252,175,0,0" VerticalAlignment="Top" Width="457" FontSize="18" FontWeight="Bold" Foreground="White"/>
+                <Label x:Name="lblhwid" Content="N/a" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="252,207,0,0" VerticalAlignment="Top" Width="478" FontSize="18" FontWeight="Bold" Foreground="White"/>
+                <Label Content="APPLICATION" HorizontalAlignment="Left" Margin="10,244,0,0" VerticalAlignment="Top" Width="154" FontSize="22" FontWeight="Bold"/>
+                <Label Content="User Count" HorizontalAlignment="Left" Margin="10,286,0,0" VerticalAlignment="Top" Width="114" FontSize="18" FontWeight="Bold" Foreground="#FF3D62E0"/>
+                <Label Content="API Count" HorizontalAlignment="Left" Margin="10,318,0,0" VerticalAlignment="Top" Width="114" FontSize="18" FontWeight="Bold" Foreground="#FF3D62E0"/>
+                <Label Content="Active APIs" HorizontalAlignment="Left" Margin="10,350,0,0" VerticalAlignment="Top" Width="114" FontSize="18" FontWeight="Bold" Foreground="#FF3D62E0"/>
+                <Label Content="App Name" HorizontalAlignment="Left" Margin="10,382,0,0" VerticalAlignment="Top" Width="114" FontSize="18" FontWeight="Bold" Foreground="#FF3D62E0"/>
+                <Label Content="App Description" HorizontalAlignment="Left" Margin="10,414,0,-29" VerticalAlignment="Top" Width="154" FontSize="18" FontWeight="Bold" Foreground="#FF3D62E0" Height="35"/>
+                <Label x:Name="lblUserCount" Content="N/a" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="252,286,0,0" VerticalAlignment="Top" Width="478" FontSize="18" FontWeight="Bold" Foreground="White"/>
+                <Label x:Name="lblApis" Content="N/a" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="252,318,0,0" VerticalAlignment="Top" Width="478" FontSize="18" FontWeight="Bold" Foreground="White"/>
+                <Label x:Name="lblActiveApis" Content="N/a" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="252,350,0,0" VerticalAlignment="Top" Width="478" FontSize="18" FontWeight="Bold" Foreground="White"/>
+                <Label x:Name="lblAppName" Content="N/a" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="252,382,0,0" VerticalAlignment="Top" Width="478" FontSize="18" FontWeight="Bold" Foreground="White"/>
+                <Label x:Name="lblAppDesc" Content="N/a" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="252,414,0,-22" VerticalAlignment="Top" Width="478" FontSize="18" FontWeight="Bold" Foreground="White" Height="28"/>
+                <Button x:Name="btnRefresh" Content="Refresh App" HorizontalAlignment="Left" Margin="606,247,0,0" VerticalAlignment="Top" Width="124" Background="#FF3D62E0" BorderBrush="#FF3D62E0" Foreground="White" Click="btnRefresh_Click"/>
+                <CheckBox x:Name="cbShowIP" HorizontalAlignment="Left" Height="27" Margin="714,180,0,0" VerticalAlignment="Top" Foreground="#FF3D62E0" Click="cbShowIP_Click"/>
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

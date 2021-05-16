@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="FusionAPI_WPF_CSharp.User_Controls.APIExamples"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FusionAPI_WPF_CSharp.User_Controls"
+             mc:Ignorable="d" d:DesignHeight="333" d:DesignWidth="740">
+    <Grid>
+        <ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalAlignment="Left" Height="440" VerticalAlignment="Top" Width="740">
+            <Grid HorizontalAlignment="Left" Height="412" VerticalAlignment="Top" Width="740">
+                <Label Content="BASIC API EXAMPLE ( APIID, DATA ) - https://freegeoip.app" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="625" FontSize="22" FontWeight="Bold"/>
+                <Label Content="App Description" HorizontalAlignment="Left" Margin="10,414,0,0" VerticalAlignment="Top" Width="154" FontSize="18" FontWeight="Bold" Foreground="#FF3D62E0"/>
+                <Label Content="N/a" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="252,414,0,0" VerticalAlignment="Top" Width="478" FontSize="18" FontWeight="Bold" Foreground="White"/>
+                <Label Content="GEO LOCATION" HorizontalAlignment="Left" Margin="10,48,0,0" VerticalAlignment="Top" Width="174" FontSize="22" FontWeight="Bold"/>
+                <Label Content="Country Code" HorizontalAlignment="Left" Margin="10,85,0,0" VerticalAlignment="Top" Width="131" FontSize="18" FontWeight="Bold" Foreground="#FF3D62E0"/>
+                <Label x:Name="lblCountryCode" Content="N/a" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="252,85,0,0" VerticalAlignment="Top" Width="478" FontSize="18" FontWeight="Bold" Foreground="White"/>
+                <TextBox x:Name="tbIP" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="36" Margin="442,44,0,0" TextWrapping="Wrap" Text="8.8.8.8" VerticalAlignment="Top" Width="288" Foreground="White" FontSize="18"/>
+                <Label Content="Country Name" HorizontalAlignment="Left" Margin="10,117,0,0" VerticalAlignment="Top" Width="131" FontSize="18" FontWeight="Bold" Foreground="#FF3D62E0"/>
+                <Label x:Name="lblCountryName" Content="N/a" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="252,117,0,0" VerticalAlignment="Top" Width="478" FontSize="18" FontWeight="Bold" Foreground="White"/>
+                <Label Content="Region Name" HorizontalAlignment="Left" Margin="10,149,0,0" VerticalAlignment="Top" Width="131" FontSize="18" FontWeight="Bold" Foreground="#FF3D62E0"/>
+                <Label x:Name="lblRegionName" Content="N/a" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="252,149,0,0" VerticalAlignment="Top" Width="478" FontSize="18" FontWeight="Bold" Foreground="White"/>
+                <Label Content="City" HorizontalAlignment="Left" Margin="10,181,0,0" VerticalAlignment="Top" Width="131" FontSize="18" FontWeight="Bold" Foreground="#FF3D62E0"/>
+                <Label x:Name="lblCity" Content="N/a" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="252,181,0,0" VerticalAlignment="Top" Width="478" FontSize="18" FontWeight="Bold" Foreground="White"/>
+                <Label Content="Lat / Lon" HorizontalAlignment="Left" Margin="10,213,0,0" VerticalAlignment="Top" Width="131" FontSize="18" FontWeight="Bold" Foreground="#FF3D62E0"/>
+                <Label x:Name="lblLatLon" Content="N/a" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="252,213,0,0" VerticalAlignment="Top" Width="478" FontSize="18" FontWeight="Bold" Foreground="White"/>
+                <Button x:Name="btnTrack" Content="Track" HorizontalAlignment="Left" Margin="10,250,0,0" VerticalAlignment="Top" Width="720" Background="#FF3D62E0" BorderBrush="#FF3D62E0" Foreground="White" Click="btnTrack_Click"/>
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</UserControl>
