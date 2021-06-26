@@ -37,7 +37,7 @@
                             <Border CornerRadius="4" BorderThickness="1" HorizontalAlignment="Left" Height="43" VerticalAlignment="Top" Width="47" BorderBrush="#FF353840" Margin="-1,-1,0,-1" Background="#FF1B1F25">
                                 <materialDesign:PackIcon Kind="LockOutline" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="4,5,0,0" Height="32" Width="35" Foreground="#FF8790A4"/>
                             </Border>
-                            <PasswordBox x:Name="tbPassword" HorizontalAlignment="Left" VerticalContentAlignment="Center" Height="41" Margin="51,0,-9,0" VerticalAlignment="Top" Width="313" CaretBrush="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF8790A4" FontSize="16" Password="Fatwhore7382412$"/>
+                            <PasswordBox x:Name="tbPassword" HorizontalAlignment="Left" VerticalContentAlignment="Center" Height="41" Margin="51,0,-9,0" VerticalAlignment="Top" Width="313" CaretBrush="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF8790A4" FontSize="16" Password="FuckYou21314$"/>
                         </Grid>
                     </Border>
                 </Grid>
